@@ -1,0 +1,12 @@
+{
+  "mypc": 1,
+  "id": "lowpoly-square",
+  "name": "Low Poly Square",
+  "description": "A tiny 3D low-poly RPG town square: walk around, talk to villagers",
+  "type": "game",
+  "entry": "index.html",
+  "icon": "icon.svg",
+  "version": "1.0.0",
+  "scores": false,
+  "touch": { "buttons": [{ "label": "OK", "action": "ok" }], "catalog": [{ "label": "OK", "action": "ok" }, { "label": "B", "action": "run" }] }
+}

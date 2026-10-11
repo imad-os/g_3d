@@ -1,0 +1,7 @@
+html, body { margin: 0; height: 100%; background: #9fd4ff; overflow: hidden; font-family: Arial, sans-serif; }
+canvas { display: block; width: 100vw; height: 100vh; }
+#hint { position: absolute; left: 0; right: 0; bottom: 5vh; text-align: center; font-size: 3.8vh; font-weight: 700; color: #fff; text-shadow: 0 0.4vh 0 #000; pointer-events: none; }
+#top { position: absolute; left: 5vw; right: 5vw; top: 5vh; font-size: 3.8vh; font-weight: 700; color: #fff; text-shadow: 0 0.4vh 0 #000; pointer-events: none; }
+#dlg { position: absolute; left: 10vw; right: 10vw; bottom: 8vh; padding: 3vh 3vw; background: rgba(20, 24, 48, 0.92); border: 0.5vh solid #ffd23f; border-radius: 2vh; color: #fff; font-size: 4vh; line-height: 1.35; display: none; }
+#dlg b { display: block; color: #ffd23f; font-size: 4.2vh; margin-bottom: 1vh; }
+#dlg i { display: block; font-style: normal; font-size: 3.4vh; color: #9fd4ff; margin-top: 1.5vh; }
