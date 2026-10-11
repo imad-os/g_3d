@@ -5,3 +5,16 @@ canvas { display: block; width: 100vw; height: 100vh; }
 #dlg { position: absolute; left: 10vw; right: 10vw; bottom: 8vh; padding: 3vh 3vw; background: rgba(20, 24, 48, 0.92); border: 0.5vh solid #ffd23f; border-radius: 2vh; color: #fff; font-size: 4vh; line-height: 1.35; display: none; }
 #dlg b { display: block; color: #ffd23f; font-size: 4.2vh; margin-bottom: 1vh; }
 #dlg i { display: block; font-style: normal; font-size: 3.4vh; color: #9fd4ff; margin-top: 1.5vh; }
+#diag { position: absolute; inset: 0; display: none; background: #12162b; color: #fff; padding: 5vh 5vw; overflow: hidden; box-sizing: border-box; }
+#diag h1 { margin: 0 0 1vh; font-size: 5vh; color: #ffd23f; }
+#diag h2 { margin: 2vh 0 0.8vh; font-size: 3.6vh; color: #9fd4ff; }
+#diag .dx { margin: 0; font-size: 3.4vh; color: #ffd23f; }
+#diag .dm { margin: 0.5vh 0; font-size: 3.2vh; }
+#diag .mono { font-family: monospace; direction: ltr; unicode-bidi: plaintext; }
+.dcols { display: flex; gap: 4vw; }
+.dcols > div { flex: 1; min-width: 0; }
+.grid { display: flex; flex-wrap: wrap; gap: 0.8vh; direction: ltr; }
+.cell { min-width: 7vh; padding: 1vh 1vw; text-align: center; font-size: 3vh; background: #2a3158; border: 0.3vh solid #444c7a; border-radius: 1vh; }
+.cell.on { background: #ffd23f; color: #000; border-color: #fff; }
+.cell.off { display: none; }
+.ax .cell { min-width: 14vh; font-family: monospace; }

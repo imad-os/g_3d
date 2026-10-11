@@ -2,25 +2,25 @@
 (function () {
     'use strict';
     var TEXT = {
-        en: { title: 'Low Poly Square', hint: 'Arrows: walk', talk: 'OK: talk', next: 'OK: continue',
+        en: { diagOpen: 'Controller diagnostics', diagClose: 'Close diagnostics', diagTitle: 'Controller & sensor diagnostics', diagExit: 'Press Back (remote) \u2192 Close diagnostics', gpHead: 'Gamepad (raw)', noPad: 'No gamepad detected. Press any button on the controller.', btnHead: 'Buttons', axHead: 'Axes', senHead: 'Accelerometer / gyroscope', noSen: 'No motion data received (this device or controller does not expose it).', accel: 'Accel (m/s\u00b2)', gyro: 'Gyro (\u00b0/s)', actHead: 'My PC actions held', lastAct: 'Last action', none: 'none', title: 'Low Poly Square', hint: 'Arrows: walk', talk: 'OK: talk', next: 'OK: continue',
               npcs: [
                   { name: 'Mara', lines: ['Welcome to the square, traveler!', 'The baker opens at dawn.'] },
                   { name: 'Old Tom', lines: ['This fountain is older than the town.', 'Rumour says a dragon sleeps in the hills.'] },
                   { name: 'Pip', lines: ['I am guarding the gate. Very important job!', 'Nothing ever happens here... yet.'] }
               ], restart: 'Back to start' },
-        fr: { title: 'Place Low Poly', hint: 'Flèches : marcher', talk: 'OK : parler', next: 'OK : continuer',
+        fr: { diagOpen: 'Diagnostic manette', diagClose: 'Fermer le diagnostic', diagTitle: 'Diagnostic manette et capteurs', diagExit: 'Appuyez sur Retour (t\u00e9l\u00e9commande) \u2192 Fermer le diagnostic', gpHead: 'Manette (brut)', noPad: 'Aucune manette d\u00e9tect\u00e9e. Appuyez sur un bouton.', btnHead: 'Boutons', axHead: 'Axes', senHead: 'Acc\u00e9l\u00e9rom\u00e8tre / gyroscope', noSen: 'Aucune donn\u00e9e de mouvement re\u00e7ue (non expos\u00e9e par cet appareil ou la manette).', accel: 'Acc\u00e9l (m/s\u00b2)', gyro: 'Gyro (\u00b0/s)', actHead: 'Actions My PC maintenues', lastAct: 'Derni\u00e8re action', none: 'aucune', title: 'Place Low Poly', hint: 'Flèches : marcher', talk: 'OK : parler', next: 'OK : continuer',
               npcs: [
                   { name: 'Mara', lines: ['Bienvenue sur la place, voyageur !', 'Le boulanger ouvre à l’aube.'] },
                   { name: 'Vieux Tom', lines: ['Cette fontaine est plus vieille que la ville.', 'On dit qu’un dragon dort dans les collines.'] },
                   { name: 'Pip', lines: ['Je garde la porte. Travail très important !', 'Il ne se passe jamais rien ici... pour l’instant.'] }
               ], restart: 'Retour au départ' },
-        es: { title: 'Plaza Low Poly', hint: 'Flechas: caminar', talk: 'OK: hablar', next: 'OK: continuar',
+        es: { diagOpen: 'Diagn\u00f3stico del mando', diagClose: 'Cerrar diagn\u00f3stico', diagTitle: 'Diagn\u00f3stico de mando y sensores', diagExit: 'Pulsa Atr\u00e1s (mando a distancia) \u2192 Cerrar diagn\u00f3stico', gpHead: 'Mando (sin procesar)', noPad: 'No se detecta ning\u00fan mando. Pulsa un bot\u00f3n.', btnHead: 'Botones', axHead: 'Ejes', senHead: 'Aceler\u00f3metro / giroscopio', noSen: 'No se reciben datos de movimiento (este dispositivo o mando no los expone).', accel: 'Acel (m/s\u00b2)', gyro: 'Giro (\u00b0/s)', actHead: 'Acciones de My PC activas', lastAct: '\u00daltima acci\u00f3n', none: 'ninguna', title: 'Plaza Low Poly', hint: 'Flechas: caminar', talk: 'OK: hablar', next: 'OK: continuar',
               npcs: [
                   { name: 'Mara', lines: ['¡Bienvenido a la plaza, viajero!', 'El panadero abre al amanecer.'] },
                   { name: 'Viejo Tom', lines: ['Esta fuente es más vieja que el pueblo.', 'Dicen que un dragón duerme en las colinas.'] },
                   { name: 'Pip', lines: ['Vigilo la puerta. ¡Trabajo importante!', 'Aquí nunca pasa nada... todavía.'] }
               ], restart: 'Volver al inicio' },
-        ar: { title: 'ساحة لو بولي', hint: 'الأسهم: للمشي', talk: 'OK: تحدث', next: 'OK: متابعة',
+        ar: { diagOpen: 'تشخيص ذراع التحكم', diagClose: 'إغلاق التشخيص', diagTitle: 'تشخيص ذراع التحكم والحساسات', diagExit: 'اضغط رجوع (الريموت) ← إغلاق التشخيص', gpHead: 'ذراع التحكم (خام)', noPad: 'لم يتم اكتشاف ذراع. اضغط أي زر.', btnHead: 'الأزرار', axHead: 'المحاور', senHead: 'مقياس التسارع / الجيروسكوب', noSen: 'لا توجد بيانات حركة (الجهاز أو الذراع لا يوفرها).', accel: 'التسارع (م/ث²)', gyro: 'الجيرو (°/ث)', actHead: 'أوامر My PC المضغوطة', lastAct: 'آخر أمر', none: 'لا شيء', title: 'ساحة لو بولي', hint: 'الأسهم: للمشي', talk: 'OK: تحدث', next: 'OK: متابعة',
               npcs: [
                   { name: 'مارا', lines: ['أهلاً بك في الساحة أيها المسافر!', 'الخباز يفتح عند الفجر.'] },
                   { name: 'العم توم', lines: ['هذه النافورة أقدم من البلدة.', 'يقال إن تنيناً ينام في التلال.'] },
@@ -32,7 +32,10 @@
     var STEP = 1000 / 60, LIM = 19, PR = 0.5, SPEED = 5 / 60;
 
     var canvas, gl, prog, uVP, uM, uFog, raf = 0, last = 0, acc = 0, ready = false;
-    var hintEl, topEl, dlgEl, lowTier = false;
+    var hintEl, topEl, dlgEl, diagEl, lowTier = false;
+    var DIAG = { on: false, t: 0, btn: [], ax: [], pad: null, btnBox: null, axBox: null, sen: null, acc: null, gyr: null, act: null, last: null, lastTxt: '', motion: false, ax3: [0, 0, 0], gy3: [0, 0, 0] };
+    var BTN = ['B', 'A', 'Y', 'X', 'L', 'R', 'ZL', 'ZR', '\u2212', '+', 'LS', 'RS', '\u2191', '\u2193', '\u2190', '\u2192', 'Home', 'Capt'];
+    var ACTIONS = ['left', 'right', 'up', 'down', 'confirm', 'jump', 'run', 'cancel', 'pause', 'menu'];
 
     // ---------- math (preallocated, no per-frame allocation) ----------
     var P = new Float32Array(16), V = new Float32Array(16), VP = new Float32Array(16), M = new Float32Array(16);
@@ -313,10 +316,80 @@
         if (!last) last = ts;
         acc += Math.min(250, ts - last); last = ts;
         while (acc >= STEP) { step(); acc -= STEP; }
-        draw();
+        if (DIAG.on) { if (ts - DIAG.t > 100) { DIAG.t = ts; updateDiag(); } } else draw();
     }
     function startLoop() { if (!raf) { last = 0; acc = 0; raf = requestAnimationFrame(frame); } }
     function stopLoop() { if (raf) cancelAnimationFrame(raf); raf = 0; }
+
+    // ---------- diagnostics screen (closed from My PC's pause menu: Back -> Close diagnostics) ----------
+    function mk(tag, cls, txt, parent) { var e = document.createElement(tag); if (cls) e.className = cls; if (txt) e.textContent = txt; if (parent) parent.appendChild(e); return e; }
+    function buildDiag() {
+        var i, c;
+        mk('h1', '', t.diagTitle, diagEl);
+        mk('p', 'dx', t.diagExit, diagEl);
+        var cols = mk('div', 'dcols', '', diagEl), l = mk('div', '', '', cols), r = mk('div', '', '', cols);
+        mk('h2', '', t.gpHead, l); DIAG.pad = mk('p', 'dm', '', l);
+        mk('h2', '', t.btnHead, l); DIAG.btnBox = mk('div', 'grid', '', l);
+        for (i = 0; i < 24; i++) { c = mk('span', 'cell', i < BTN.length ? BTN[i] : String(i), DIAG.btnBox); DIAG.btn.push(c); }
+        mk('h2', '', t.axHead, l); DIAG.axBox = mk('div', 'grid ax', '', l);
+        for (i = 0; i < 8; i++) { c = mk('span', 'cell', '', DIAG.axBox); DIAG.ax.push(c); }
+        mk('h2', '', t.senHead, r); DIAG.sen = mk('p', 'dm', t.noSen, r);
+        DIAG.acc = mk('p', 'dm mono', '', r); DIAG.gyr = mk('p', 'dm mono', '', r);
+        mk('h2', '', t.actHead, r); DIAG.act = mk('p', 'dm mono', '', r);
+        mk('h2', '', t.lastAct, r); DIAG.last = mk('p', 'dm mono', '', r);
+    }
+    function onMotion(e) {
+        var a = e.accelerationIncludingGravity || e.acceleration, g = e.rotationRate;
+        if (a && a.x !== null) { DIAG.ax3[0] = a.x; DIAG.ax3[1] = a.y; DIAG.ax3[2] = a.z; DIAG.motion = true; }
+        if (g && g.alpha !== null) { DIAG.gy3[0] = g.alpha; DIAG.gy3[1] = g.beta; DIAG.gy3[2] = g.gamma; DIAG.motion = true; }
+    }
+    function fx(v) { return (v < 0 ? '' : '+') + v.toFixed(2); }
+    function updateDiag() {
+        var i, gps = null, gp = null, n;
+        try { gps = navigator.getGamepads ? navigator.getGamepads() : null; } catch (e) { gps = null; }
+        if (gps) for (i = 0; i < gps.length; i++) if (gps[i] && gps[i].connected) { gp = gps[i]; break; }
+        if (!gp) {
+            DIAG.pad.textContent = t.noPad;
+            for (i = 0; i < 24; i++) { DIAG.btn[i].className = 'cell' + (i < BTN.length ? '' : ' off'); }
+            for (i = 0; i < 8; i++) DIAG.ax[i].className = 'cell off';
+        } else {
+            DIAG.pad.textContent = gp.id + ' [' + (gp.mapping || 'raw') + ']';
+            n = gp.buttons.length;
+            for (i = 0; i < 24; i++) {
+                if (i < n) { DIAG.btn[i].className = 'cell' + (gp.buttons[i].pressed ? ' on' : ''); DIAG.btn[i].textContent = (i < BTN.length && gp.mapping === 'standard' ? BTN[i] : '#' + i) + (gp.buttons[i].value > 0 && gp.buttons[i].value < 1 ? ' ' + gp.buttons[i].value.toFixed(1) : ''); }
+                else DIAG.btn[i].className = 'cell off';
+            }
+            for (i = 0; i < 8; i++) {
+                if (i < gp.axes.length) { DIAG.ax[i].className = 'cell' + (Math.abs(gp.axes[i]) > 0.25 ? ' on' : ''); DIAG.ax[i].textContent = 'A' + i + ' ' + fx(gp.axes[i]); }
+                else DIAG.ax[i].className = 'cell off';
+            }
+        }
+        DIAG.sen.style.display = DIAG.motion ? 'none' : 'block';
+        DIAG.acc.textContent = t.accel + ': X ' + fx(DIAG.ax3[0]) + '  Y ' + fx(DIAG.ax3[1]) + '  Z ' + fx(DIAG.ax3[2]);
+        DIAG.gyr.textContent = t.gyro + ': α ' + fx(DIAG.gy3[0]) + '  β ' + fx(DIAG.gy3[1]) + '  γ ' + fx(DIAG.gy3[2]);
+        var held = '';
+        for (i = 0; i < ACTIONS.length; i++) if (MyPC.isDown(ACTIONS[i])) held += ACTIONS[i] + ' ';
+        DIAG.act.textContent = held || t.none;
+        DIAG.last.textContent = DIAG.lastTxt || t.none;
+    }
+    function setMenus() {
+        MyPC.setMenu(DIAG.on ? [{ id: 'closediag', label: t.diagClose }, { id: 'restart', label: t.restart }]
+                             : [{ id: 'diag', label: t.diagOpen }, { id: 'restart', label: t.restart }]);
+    }
+    function openDiag() {
+        if (DIAG.on) return;
+        DIAG.on = true; state = 'diag'; dlgEl.style.display = 'none'; setHint('');
+        diagEl.style.display = 'block'; canvas.style.visibility = 'hidden';
+        window.addEventListener('devicemotion', onMotion);
+        setMenus(); updateDiag();
+    }
+    function closeDiag() {
+        if (!DIAG.on) return;
+        DIAG.on = false; state = 'play';
+        diagEl.style.display = 'none'; canvas.style.visibility = 'visible';
+        window.removeEventListener('devicemotion', onMotion);
+        setMenus();
+    }
     function reset() {
         player.x = 0; player.z = 8; player.a = 0; cam.x = 0; cam.z = 8; state = 'play'; dlgEl.style.display = 'none';
         MyPC.save('pos', { x: 0, z: 8 });
@@ -324,30 +397,36 @@
 
     MyPC.init({
         pad: true,
+        ownMenu: true,
         onInit: function (info) {
             t = TEXT[info.lang] || TEXT.en; rtl = !!info.rtl;
             lowTier = !!(info.quality && info.quality.tier === 'low');
             canvas = document.getElementById('c'); hintEl = document.getElementById('hint');
-            topEl = document.getElementById('top'); dlgEl = document.getElementById('dlg');
+            topEl = document.getElementById('top'); dlgEl = document.getElementById('dlg'); diagEl = document.getElementById('diag'); buildDiag();
             document.title = t.title;
-            topEl.textContent = t.title + ' · ' + t.hint;
+            topEl.textContent = t.title + ' \u00b7 ' + t.hint;
             if (!initGL()) { MyPC.fail('WebGL'); return; }
             resize(); window.addEventListener('resize', resize);
             buildWorld(); MyPC.progress(0.8);
             var s = MyPC.load('pos', null);
             if (s && typeof s.x === 'number' && typeof s.z === 'number' && !blocked(s.x, s.z)) { player.x = cam.x = s.x; player.z = cam.z = s.z; }
-            MyPC.setMenu([{ id: 'restart', label: t.restart }]);
+            setMenus();
             MyPC.progress(1);
             ready = true;
+            if (info.standalone && /[?&]diag/.test(location.search)) openDiag();      // desktop testing
             MyPC.ready();
         },
         onStart: function () { MyPC.announce(t.title + '. ' + t.hint); startLoop(); },
         onPause: function () { stopLoop(); MyPC.save('pos', { x: player.x, z: player.z }); },
         onResume: startLoop,
-        onDestroy: function () { stopLoop(); window.removeEventListener('resize', resize); },
-        onInput: function (action, pressed, repeat) {
-            if (pressed && !repeat && action === 'confirm' && ready) confirm();
+        onDestroy: function () { stopLoop(); window.removeEventListener('devicemotion', onMotion); window.removeEventListener('resize', resize); },
+        onInput: function (action, pressed, repeat, dev) {
+            if (pressed && DIAG.on) DIAG.lastTxt = action + ' (' + dev + ')';
+            if (pressed && !repeat && ready) {
+                if (action === 'confirm' && !DIAG.on) confirm();
+                else if (action === 'menu' && !DIAG.on) openDiag();
+            }
         },
-        onMenu: function (id) { if (id === 'restart') reset(); }
+        onMenu: function (id) { if (id === 'restart') { closeDiag(); reset(); } else if (id === 'diag') openDiag(); else if (id === 'closediag') closeDiag(); }
     });
 })();
